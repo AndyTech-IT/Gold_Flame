@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gold_Flame", "Gold_Flame.csproj", "{2B4539B7-A8AF-43AC-81AC-7202FE1D60D8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UDP_Server", "..\UDP_Server\UDP_Server.csproj", "{F003AF7F-B9A2-4096-B9BA-5D6DE0F6D784}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2B4539B7-A8AF-43AC-81AC-7202FE1D60D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B4539B7-A8AF-43AC-81AC-7202FE1D60D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B4539B7-A8AF-43AC-81AC-7202FE1D60D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B4539B7-A8AF-43AC-81AC-7202FE1D60D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F003AF7F-B9A2-4096-B9BA-5D6DE0F6D784}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F003AF7F-B9A2-4096-B9BA-5D6DE0F6D784}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F003AF7F-B9A2-4096-B9BA-5D6DE0F6D784}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F003AF7F-B9A2-4096-B9BA-5D6DE0F6D784}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2E6EAE46-D661-49AA-8617-192B3677FA29}
+	EndGlobalSection
+EndGlobal
