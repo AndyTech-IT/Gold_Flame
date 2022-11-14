@@ -9,7 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\UDP_Server\UDP_Server.csproj" />
+    <ProjectReference Include="..\NetworkGame_Asset\NetworkGame_Asset.csproj" />
   </ItemGroup>
 
 </Project>
