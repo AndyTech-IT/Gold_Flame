@@ -5,7 +5,7 @@ VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gold_Flame", "Gold_Flame.csproj", "{2B4539B7-A8AF-43AC-81AC-7202FE1D60D8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetworkGame_Asset", "..\NetworkGame_Asset\NetworkGame_Asset.csproj", "{796E6CC7-A6A3-46DE-9887-D688D9E1FEFE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LAN_Game", "..\LAN_Game\LAN_Game.csproj", "{CA60AA7E-6422-463D-B8D0-CA5FA1C4BAC8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{2B4539B7-A8AF-43AC-81AC-7202FE1D60D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2B4539B7-A8AF-43AC-81AC-7202FE1D60D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2B4539B7-A8AF-43AC-81AC-7202FE1D60D8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{796E6CC7-A6A3-46DE-9887-D688D9E1FEFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{796E6CC7-A6A3-46DE-9887-D688D9E1FEFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{796E6CC7-A6A3-46DE-9887-D688D9E1FEFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{796E6CC7-A6A3-46DE-9887-D688D9E1FEFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA60AA7E-6422-463D-B8D0-CA5FA1C4BAC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA60AA7E-6422-463D-B8D0-CA5FA1C4BAC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA60AA7E-6422-463D-B8D0-CA5FA1C4BAC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA60AA7E-6422-463D-B8D0-CA5FA1C4BAC8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
