@@ -14,6 +14,7 @@ namespace Gold_Flame
     {
         static readonly LAN_Player player = new();
         static readonly Room_Form room = new(player);
+        static readonly Login_Form login = new();
 
         public Lobby_Form()
         {
@@ -41,11 +42,15 @@ namespace Gold_Flame
             if (Rooms_LV.SelectedItems.Count == 0)
                 return;
 
+            if (login.Show_Login(player.Name) != DialogResult.OK)
+                return;
+
+            player.Name = login.Login;
             var item = Rooms_LV.SelectedItems[0];
             IPAddress address = IPAddress.Parse(item.SubItems[1].Text);
             LAN_Member server = new(item.Text, address, LAN_Room.PORT);
 
-            room.Show_Room(server);
+            room.Show_Room(server, login.Password);
         }
 
         private void Refresh_B_Click(object sender, EventArgs e)
@@ -61,7 +66,11 @@ namespace Gold_Flame
 
         private void Host_B_Click(object sender, EventArgs e)
         {
-            room.Show_Room();
+            if (login.Show_Login(player.Name) == DialogResult.OK)
+            {
+                player.Name = login.Login;
+                room.Show_Room(password:login.Password);
+            }
         }
     }
 }

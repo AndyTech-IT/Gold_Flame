@@ -16,35 +16,51 @@ namespace Gold_Flame
         LAN_Player _player;
         LAN_Member _server;
         bool _im_host;
+        bool _online;
 
         public Room_Form(LAN_Player player)
         {
             InitializeComponent();
             _player = player;
             player.Me_Leave_Room += Me_Leave_Room;
+            player.Rject_Enter_In_Room += Rject_Enter_In_Room;
+            player.Me_Enter_In_Room += Me_Enter_In_Room;
+            player_Hand1.Card_Selected += Card_Selected;
+        }
+
+        private void Card_Selected(string card)
+        {
+            cards_Table1.Curent_Card = card;
+        }
+
+        private void Me_Enter_In_Room()
+        {
+            _online = true;
+        }
+
+        private void Rject_Enter_In_Room(LAN_Message message)
+        {
+            MessageBox.Show(message.Data.Decode_String().Result);
         }
 
         private void Me_Leave_Room()
         {
-            if (_im_host)
-            {
-                return;
-            }
-            DialogResult = DialogResult.Abort;
-            Invoke(Close);
+            _online = false;
+            MessageBox.Show("You leave room");
         }
 
-        public DialogResult Show_Room(LAN_Member? server = null)
+        public DialogResult Show_Room(LAN_Member? server = null, string password = "")
         {
+            _online = false;
             if (server is null)
             {
-                LAN_Room.Open(_player.Player_Data);
+                LAN_Room.Open(_player.Player_Data, _player.Name + "`s room", password, 5, 3);
                 _server = LAN_Room.Room_Data;
                 _im_host = true;
             }
             else
             {
-                _player.TryConect(server.Value.EndPoint);
+                _player.TryConect(server.Value.EndPoint, password);
                 _server = server.Value;
                 _im_host = false;
             }
@@ -63,10 +79,9 @@ namespace Gold_Flame
             }
             else
             {
-                if (DialogResult != DialogResult.Abort)
+                if (_online == true)
                     _player.Disconect();
             }
-            DialogResult = DialogResult.OK;
         }
     }
 }

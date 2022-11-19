@@ -32,7 +32,7 @@
             System.Windows.Forms.Button Host_B;
             System.Windows.Forms.Button Refresh_B;
             System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem(new string[] {
             "2",
             "255.255.255.255",
             "2",
@@ -121,7 +121,7 @@
             this.Rooms_LV.GridLines = true;
             this.Rooms_LV.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.Rooms_LV.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem2});
+            listViewItem1});
             this.Rooms_LV.Location = new System.Drawing.Point(12, 13);
             this.Rooms_LV.MultiSelect = false;
             this.Rooms_LV.Name = "Rooms_LV";
@@ -160,6 +160,7 @@
             this.Controls.Add(tableLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Lobby_Form";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Список комнат";
             this.Load += new System.EventHandler(this.Lobby_Form_Load);
             tableLayoutPanel1.ResumeLayout(false);
