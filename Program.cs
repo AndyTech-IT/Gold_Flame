@@ -1,3 +1,5 @@
+using LAN_Game;
+
 namespace Gold_Flame
 {
     internal static class Program

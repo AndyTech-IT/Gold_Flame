@@ -62,19 +62,14 @@
             // 
             // player_Hand1
             // 
-            this.player_Hand1.Active_Cards = new string[] {
-        "Test",
-        "Test",
-        "Test1"};
+            this.player_Hand1.Active_Cards = new string[0];
             this.player_Hand1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.player_Hand1.FirstMove = true;
             this.player_Hand1.Invert = false;
             this.player_Hand1.Location = new System.Drawing.Point(679, 421);
-            this.player_Hand1.Login = "Login1";
+            this.player_Hand1.Login = "Login";
             this.player_Hand1.Name = "player_Hand1";
-            this.player_Hand1.Passive_Cards = new string[] {
-        "Test",
-        "test"};
+            this.player_Hand1.Passive_Cards = new string[0];
             this.player_Hand1.Power_Score = 10;
             this.player_Hand1.Size = new System.Drawing.Size(333, 204);
             this.player_Hand1.TabIndex = 0;
